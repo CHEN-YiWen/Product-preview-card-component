@@ -1,0 +1,135 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-1:'Fraunces', serif;
+    --font-2:'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 100vh;
+    background-color: var(--Cream);
+}
+
+.card{
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    width: 350px;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.info{
+    width: 290px;
+    margin: 0;
+    padding: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-family: var(--font-1);
+    font-size: 36px;
+    padding-right: 30px;
+    line-height: 34px;
+    margin-bottom: 30px;
+    color: var(--Very-dark-blue);
+}
+
+p{
+    font-family: var(--font-2);
+    color: var(--Dark-grayish-blue);
+    font-size: 16px;
+}
+
+.description{
+    line-height: 28px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+
+.category{
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.discount{
+    font-size: 32px;
+    color: var(--Dark-cyan);
+    font-family: var(--font-1);
+}
+
+.original{
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.info a{
+    font-family: var(--font-2);
+    font-size: 18px;
+    background-color: var(--Dark-cyan);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--White);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.info a:hover{
+    background-color: var(--Very-dark-blue);
+}
+.attribution{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 650px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+}
