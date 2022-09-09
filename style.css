@@ -111,6 +111,7 @@ p{
 
 .info a:hover{
     background-color: var(--Very-dark-blue);
+    transition: 0.3s ease-in-out;
 }
 .attribution{
     margin-top: 20px;
